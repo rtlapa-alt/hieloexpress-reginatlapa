@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hielo Express | Pide hoy, recibe hoy</title>
+  <meta name="description" content="Hielo Express: El hielo que nunca te falla. Entrega en CDMX y Área Metropolitana (sujeto a disponibilidad de ruta). Pagos con tarjeta y transferencia." />
+  <link rel="preload" href="/fonts/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/Manrope-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <div class="header__left">
+        <nav class="nav nav--main">
+          <a href="#productos">Productos</a>
+          <a href="#entrega">Entrega</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </div>
+
+      <a class="brand brand--center" href="#inicio">
+        <img src="img/logo.png" alt="Hielo Express" class="brand__logo" />
+      </a>
+
+      <div class="header__right">
+        <div class="search">
+          <button class="action-icon" id="searchToggle" aria-label="Buscar" aria-expanded="false">🔍</button>
+          <div class="search-dropdown" id="searchDropdown" role="dialog" aria-label="Buscar productos">
+            <input id="searchInput" class="search-input" type="search" placeholder="Buscar productos..." autocomplete="off" />
+            <div class="search-results" id="searchResults"></div>
+          </div>
+        </div>
+        <a class="action-icon" href="favoritos.html" aria-label="Favoritos">♥</a>
+        <a class="btn btn--cta" href="clientes.html">Conviértete en cliente</a>
+      </div>
+
+      <button class="burger" id="burger" aria-label="Abrir menú">
+        ☰
+      </button>
+    </div>
+
+    <!-- Mobile nav -->
+    <div class="mobileNav" id="mobileNav">
+      <a href="#productos">Productos</a>
+      <a href="#entrega">Entrega</a>
+      <a href="#contacto">Contacto</a>
+      <a class="btn" href="#productos">Ver precios</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="inicio" class="hero">
+    <div class="container hero__grid">
+      <div class="hero__copy reveal">
+        <h1>Hielo premium para negocios que exigen calidad</h1>
+        <p class="subtitle">
+          No todo el hielo es igual… y tus bebidas tampoco deberían serlo.
+        </p>
+        <p class="subtitle">
+          En Hielo Express Gourmet producimos y distribuimos hielo cristalino de grado premium para bares, restaurantes, eventos y negocios que cuidan cada detalle.
+          Nuestro hielo no solo enfría: realza la presentación, conserva el sabor y eleva la experiencia de tus clientes.
+        </p>
+        <p class="subtitle">
+          Fabricamos distintos formatos gourmet —cubos, esferas, rol y frappe— adaptados a cada tipo de consumo, desde coctelería de autor hasta grandes volúmenes para restaurantes y eventos.
+        </p>
+        <p class="subtitle">
+          ✔ Más elegante en tu vaso<br>
+          ✔ Entrega directa a tu negocio
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured strip -->
+  <section class="section section--dark section--divider">
+    <div class="container">
+      <div class="featuredStrip__grid">
+        <div class="featuredStrip__item reveal">
+          <img class="featuredStrip__image" src="img/refri.jpg" alt="Refrigeración" />
+        </div>
+        <div class="featuredStrip__item reveal">
+          <img class="featuredStrip__image" src="img/camara.jpg" alt="Cámara fría" />
+        </div>
+        <div class="featuredStrip__item reveal">
+          <img class="featuredStrip__image" src="img/conser.jpg" alt="Conservación" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="brandStrip">
+    <div class="container">
+      <div class="brandStrip__text">Empresas que confían en nosotros</div>
+      <div class="brandStrip__logos">
+        <img src="img/3b.jpg" alt="3B" />
+        <img src="img/walmart.jpg" alt="Walmart" />
+        <img src="img/mr-pampas-ensaladas-y.jpg" alt="Pampas" />
+        <img src="img/CHEDRAUI-SELECTO.jpg" alt="Chedraui" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="productos" class="section section--divider">
+    <div class="container">
+      <div class="section__head">
+        <h2>Productos y precios</h2>
+        <p class="muted">Precios en MXN. Disponibilidad sujeta a ruta.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card reveal" data-search="hielo rol 16kg bolsa" data-link="producto-rol.html">
+          <a href="producto-rol.html">
+            <img class="card__image" src="img/rol.jpg" alt="Hielo ROL 16KG" />
+          </a>
+          <h3><a href="producto-rol.html">Hielo ROL</a></h3>
+          <p class="muted">Bolsa 16KG</p>
+          <div class="price">$89</div>
+          <div class="card__actions">
+            <button class="btn btn--primary btn--full orderBtn" data-product="Hielo ROL 16KG" data-price="89">Pedir</button>
+            <a class="btn btn--ghost btn--full" href="producto-rol.html">Ver detalles</a>
+          </div>
+        </article>
+
+        <article class="card reveal" data-search="hielo cubo gourmet 16kg bolsa" data-link="producto-cubo.html">
+          <a href="producto-cubo.html">
+            <img class="card__image" src="img/cubo.jpg" alt="Hielo Cubo Gourmet 16KG" />
+          </a>
+          <h3><a href="producto-cubo.html">Hielo Cubo Gourmet</a></h3>
+          <p class="muted">Bolsa 16KG</p>
+          <div class="price">$99</div>
+          <div class="card__actions">
+            <button class="btn btn--primary btn--full orderBtn" data-product="Hielo Cubo Gourmet 16KG" data-price="99">Pedir</button>
+            <a class="btn btn--ghost btn--full" href="producto-cubo.html">Ver detalles</a>
+          </div>
+        </article>
+
+        <article class="card reveal" data-search="barra de hielo 170kg barra" data-link="producto-barra170.html">
+          <a href="producto-barra170.html">
+            <img class="card__image" src="img/barra170.jpg" alt="Barra de Hielo 170KG" />
+          </a>
+          <h3><a href="producto-barra170.html">Barra de Hielo</a></h3>
+          <p class="muted">170KG</p>
+          <div class="price">$650</div>
+          <div class="card__actions">
+            <button class="btn btn--primary btn--full orderBtn" data-product="Barra de Hielo 170KG" data-price="650">Pedir</button>
+            <a class="btn btn--ghost btn--full" href="producto-barra170.html">Ver detalles</a>
+          </div>
+        </article>
+
+        <article class="card reveal" data-search="media barra 85kg barra" data-link="producto-barra85.html">
+          <a href="producto-barra85.html">
+            <img class="card__image" src="img/barra85.jpg" alt="Media Barra 85KG" />
+          </a>
+          <h3><a href="producto-barra85.html">Media Barra</a></h3>
+          <p class="muted">85KG</p>
+          <div class="price">$380</div>
+          <div class="card__actions">
+            <button class="btn btn--primary btn--full orderBtn" data-product="Media Barra 85KG" data-price="380">Pedir</button>
+            <a class="btn btn--ghost btn--full" href="producto-barra85.html">Ver detalles</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Delivery -->
+  <section id="entrega" class="section section--dark section--divider">
+    <div class="container">
+      <div class="section__head">
+        <h2>Entrega</h2>
+        <p class="muted">CDMX y Área Metropolitana (preguntar por disponibilidad de ruta).</p>
+      </div>
+
+      <div class="twoCol">
+        <div class="panel reveal">
+          <h3>¿Cómo funciona?</h3>
+          <ol class="steps">
+            <li>Elige producto y cantidad.</li>
+            <li>Envíanos tu ubicación/zona.</li>
+            <li>Confirmamos ruta y tiempo estimado.</li>
+            <li>Pagas con tarjeta o transferencia y entregamos.</li>
+          </ol>
+        </div>
+
+        <div class="panel reveal">
+          <h3>Información clave</h3>
+          <ul class="bullets">
+            <li><strong>Zonas:</strong> CDMX y Área Metropolitana.</li>
+            <li><strong>Disponibilidad:</strong> sujeta a ruta.</li>
+            <li><strong>Pagos:</strong> tarjeta y transferencia.</li>
+            <li><strong>Atención:</strong> personalizada por WhatsApp.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contacto" class="section section--divider">
+    <div class="container">
+      <div class="section__head">
+        <h2>Contacto</h2>
+        <p class="muted">Te respondemos por WhatsApp para confirmar disponibilidad y precio final según ruta.</p>
+      </div>
+
+      <div class="contactCard reveal">
+        <div>
+          <h3>WhatsApp</h3>
+          <p class="muted">Atención personalizada</p>
+          <p class="big">+52 55 8747 1699</p>
+        </div>
+
+        <a class="btn btn--primary btn--whatsapp" id="contactWhats" target="_blank" rel="noopener">Abrir WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <h4>Hielo Express</h4>
+        <p>Distribuidora de hielo premium para negocios, eventos y consumo comercial.</p>
+      </div>
+
+      <div>
+        <h4>Productos</h4>
+        <a href="producto-rol.html">Hielo Rol</a>
+        <a href="producto-cubo.html">Hielo Cubo Gourmet</a>
+        <a href="producto-rol.html">Hielo Molido Blanco</a>
+        <a href="producto-barra170.html">Hielo en Barras</a>
+      </div>
+
+      <div>
+        <h4>Servicios</h4>
+        <a href="#entrega">Entrega express</a>
+        <a href="#entrega">Rutas comerciales</a>
+        <a href="#contacto">Eventos</a>
+        <a href="#contacto">Mayoreo</a>
+      </div>
+
+      <div>
+        <h4>Contacto</h4>
+        <p>CDMX</p>
+        <p>📞 55 8747 1699</p>
+        <p>📧 ventasexpresshielo@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 Hielo Express · Todos los derechos reservados
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a class="whatsFloat" id="floatWhats" target="_blank" rel="noopener" aria-label="WhatsApp Hielo Express">
+    <div class="whatsFloat__text">
+      <strong>Atención personalizada</strong>
+      <span>WhatsApp</span>
+    </div>
+    <div class="whatsFloat__icon">💬</div>
+  </a>
+
+  <script src="app.js"></script>
+</body>
+</html>

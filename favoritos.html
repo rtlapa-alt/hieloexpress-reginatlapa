@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Favoritos | Hielo Express</title>
+  <meta name="description" content="Favoritos de Hielo Express. Guarda tus productos para tu pedido." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <div class="header__left">
+        <nav class="nav nav--main">
+          <a href="index.html#productos">Productos</a>
+          <a href="index.html#entrega">Entrega</a>
+          <a href="index.html#contacto">Contacto</a>
+        </nav>
+      </div>
+
+      <a class="brand brand--center" href="index.html#inicio">
+        <img src="img/logo.png" alt="Hielo Express" class="brand__logo" />
+      </a>
+
+      <div class="header__right">
+        <a class="action-icon" href="index.html#contacto" aria-label="Buscar">🔍</a>
+        <a class="action-icon" href="favoritos.html" aria-label="Favoritos">♥</a>
+      </div>
+
+      <button class="burger" id="burger" aria-label="Abrir menú">
+        ☰
+      </button>
+    </div>
+
+    <div class="mobileNav" id="mobileNav">
+      <a href="index.html#productos">Productos</a>
+      <a href="index.html#entrega">Entrega</a>
+      <a href="index.html#contacto">Contacto</a>
+      <a class="btn" href="index.html#productos">Ver precios</a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>Favoritos</h2>
+        <p class="muted">Guarda productos para armar tu carrito.</p>
+      </div>
+
+      <div class="card">
+        <h3>Tu lista está vacía</h3>
+        <p class="muted">Agrega productos desde el catálogo y aparecerán aquí.</p>
+        <a class="btn btn--primary" href="index.html#productos">Ver productos</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <h4>Hielo Express</h4>
+        <p>Distribuidora de hielo premium para negocios, eventos y consumo comercial.</p>
+      </div>
+
+      <div>
+        <h4>Productos</h4>
+        <a href="producto-rol.html">Hielo Rol</a>
+        <a href="producto-cubo.html">Hielo Cubo Gourmet</a>
+        <a href="producto-rol.html">Hielo Molido Blanco</a>
+        <a href="producto-barra170.html">Hielo en Barras</a>
+      </div>
+
+      <div>
+        <h4>Servicios</h4>
+        <a href="index.html#entrega">Entrega express</a>
+        <a href="index.html#entrega">Rutas comerciales</a>
+        <a href="index.html#contacto">Eventos</a>
+        <a href="index.html#contacto">Mayoreo</a>
+      </div>
+
+      <div>
+        <h4>Contacto</h4>
+        <p>CDMX</p>
+        <p>📞 55 8747 1699</p>
+        <p>📧 ventas@hieloexpress.com.mx</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 Hielo Express · Todos los derechos reservados
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
